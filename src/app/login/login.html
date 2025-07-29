@@ -1,0 +1,5 @@
+<p>Login Page</p>
+<label>Username</label>
+<input #inputRef placeholder="Enter the username" [value]="userName()" (input)="userName.set($any($event.target).value)">
+<br/>
+<button (click)="login()">Login</button>
